@@ -21,5 +21,5 @@ jobs:
         host: ${{ secrets.IP }} # Endereço IP da sua VM
         username: ubuntu # Nome de usuário da sua VM
         key: ${{ secrets.SSH_PRIVATE_KEY }} # Chave SSH privada
-        source: "*" # Caminho relativo do arquivo HTML (se estiver no diretório de trabalho)
+        source: "index.html" # Caminho relativo do arquivo HTML (se estiver no diretório de trabalho)
         target: "/var/www/html/" # Caminho na sua VM onde você deseja que o arquivo seja transferido
