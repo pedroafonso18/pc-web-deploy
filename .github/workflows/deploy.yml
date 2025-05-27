@@ -21,4 +21,4 @@ jobs:
         username: ubuntu
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         source: "./app/*" # Copia todos os arquivos da pasta app
-        target: "/var/www/html" # Caminho na sua VM onde você deseja que os arquivos sejam transferidos
+        target: "/var/www/html/." # Added dot to copy contents directly into html folder
